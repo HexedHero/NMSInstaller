@@ -5,3 +5,6 @@
 A tool to install all Minecraft 1.8-1.18 NMS revisions to your local Maven repository.  
 The installer handles all needed JDKs and will download them for you.  
 Feel free to PR a bash version.
+
+<h2>How To</h2>
+Download the NMSInstaller.bat and run it. Make sure to not run it within a file sharing instance such as OneDrive, DropBox etc.
