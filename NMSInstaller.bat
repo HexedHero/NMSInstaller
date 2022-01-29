@@ -49,7 +49,6 @@ curl https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifac
    echo Installing %%a...
    title Installing %%a...
    "%java8version%/%java8version%/bin/java" -jar BuildTools.jar --rev %%a
-   pause
 ))
 
 (for %%a in (%java16%) do (
