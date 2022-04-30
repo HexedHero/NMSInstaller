@@ -6,9 +6,9 @@ set java16=1.17.1
 set java17=1.18.1 1.18.2
 
 :: Set JDK versions
-set java8version=jdk8u322-b06
+set java8version=jdk8u332-b09
 set java16version=jdk-16.0.2+7
-set java17version=jdk-17.0.2+8
+set java17version=jdk-17.0.3+7
 
 :: Delete old work folder
 if exist NMSInstaller (
