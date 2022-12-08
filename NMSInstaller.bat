@@ -3,7 +3,7 @@
 :: Set all Minecraft NMS versions
 set java8=1.8 1.8.3 1.8.8 1.9.2 1.9.4 1.10.2 1.11.2 1.12.2 1.13 1.13.2 1.14.4 1.15.2 1.16.1 1.16.3 1.16.5
 set java16=1.17.1
-set java17=1.18.1 1.18.2 1.19.2
+set java17=1.18.1 1.18.2 1.19.3
 
 :: Set JDK versions
 set java8version=jdk8u345-b01
