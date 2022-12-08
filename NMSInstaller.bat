@@ -27,9 +27,9 @@ cd NMSInstaller
 echo Downloading JDKs...
 title Downloading JDKs...
 
-curl https://api.adoptium.net/v3/binary/version/%java8version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java8version%.zip -L
-curl https://api.adoptium.net/v3/binary/version/%java16version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java16version%.zip -L
-curl https://api.adoptium.net/v3/binary/version/%java17version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java17version%.zip -L
+curl -k https://api.adoptium.net/v3/binary/version/%java8version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java8version%.zip -L
+curl -k https://api.adoptium.net/v3/binary/version/%java16version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java16version%.zip -L
+curl -k https://api.adoptium.net/v3/binary/version/%java17version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java17version%.zip -L
 
 :: Unzip JDKs
 echo Unzipping JDKs...
