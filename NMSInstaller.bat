@@ -31,8 +31,8 @@ curl -k https://api.adoptium.net/v3/binary/version/%java16version%/windows/x64/j
 curl -k https://api.adoptium.net/v3/binary/version/%java17version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java17version%.zip -L
 
 :: Unzip JDKs
-echo Unzipping JDKs...
 title Unzipping JDKs...
+echo Unzipping JDKs...
 powershell -Command "Expand-Archive %java8version%.zip"
 powershell -Command "Expand-Archive %java16version%.zip"
 powershell -Command "Expand-Archive %java17version%.zip"
