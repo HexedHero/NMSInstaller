@@ -6,9 +6,9 @@ set java16=1.17.1
 set java17=1.18.1 1.18.2 1.19.2 1.19.3 1.19.4 1.20.1 1.20.2 1.20.4
 
 :: Set JDK versions (https://adoptium.net/temurin/releases/)
-set java8version=jdk8u392-b08
+set java8version=jdk8u402-b06
 set java16version=jdk-16.0.2+7
-set java17version=jdk-17.0.9+9.1
+set java17version=jdk-17.0.10+7
 
 :: Delete old work folder
 if exist NMSInstaller (
