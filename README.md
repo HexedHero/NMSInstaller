@@ -1,4 +1,4 @@
-<img width="185" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c0/Make_Stuff_icon_%28MCE%29.png/revision/latest/scale-to-width-down/185?cb=20210912144304" alt="NMSInstaller" align="right">
+<img width="185" src="NO_PUBLISH/icon.png" alt="NMSInstaller" align="right">
 <div align="left">
 <h1>NMSInstaller</h1>
 
