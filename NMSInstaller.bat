@@ -4,11 +4,13 @@
 set java8=1.8 1.8.3 1.8.8 1.9.2 1.9.4 1.10.2 1.11.2 1.12.2 1.13 1.13.2 1.14.4 1.15.2 1.16.1 1.16.3 1.16.5
 set java16=1.17.1
 set java17=1.18.1 1.18.2 1.19.2 1.19.3 1.19.4 1.20.1 1.20.2 1.20.4
+set java21=1.20.5
 
 :: Set JDK versions (https://adoptium.net/temurin/releases/)
 set java8version=jdk8u402-b06
 set java16version=jdk-16.0.2+7
 set java17version=jdk-17.0.10+7
+set java21version=jdk-21.0.3+9
 
 :: Delete old work folder
 if exist NMSInstaller (
@@ -29,6 +31,7 @@ echo Downloading JDKs...
 curl -k https://api.adoptium.net/v3/binary/version/%java8version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java8version%.zip -L
 curl -k https://api.adoptium.net/v3/binary/version/%java16version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java16version%.zip -L
 curl -k https://api.adoptium.net/v3/binary/version/%java17version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java17version%.zip -L
+curl -k https://api.adoptium.net/v3/binary/version/%java21version%/windows/x64/jdk/hotspot/normal/eclipse?project=jdk -o %java21version%.zip -L
 
 :: Unzip JDKs
 title Unzipping JDKs...
@@ -36,6 +39,7 @@ echo Unzipping JDKs...
 powershell -Command "Expand-Archive %java8version%.zip"
 powershell -Command "Expand-Archive %java16version%.zip"
 powershell -Command "Expand-Archive %java17version%.zip"
+powershell -Command "Expand-Archive %java21version%.zip"
 
 :: Download BuildTools
 title Downloading BuildTools...
@@ -59,6 +63,12 @@ curl https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifac
    title Installing %%a...
    echo Installing %%a...
    "%java17version%/%java17version%/bin/java" -jar BuildTools.jar --rev %%a
+))
+
+(for %%a in (%java21%) do (
+   title Installing %%a...
+   echo Installing %%a...
+   "%java21version%/%java21version%/bin/java" -jar BuildTools.jar --rev %%a
 ))
 
 :: Finished!
