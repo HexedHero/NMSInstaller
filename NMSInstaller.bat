@@ -7,9 +7,9 @@ set java17=1.18.1 1.18.2 1.19.2 1.19.3 1.19.4 1.20.1 1.20.2 1.20.4
 set java21=1.20.6 1.21
 
 :: Set JDK versions (https://adoptium.net/temurin/releases/)
-set java8version=jdk8u402-b06
+set java8version=jdk8u412-b08
 set java16version=jdk-16.0.2+7
-set java17version=jdk-17.0.10+7
+set java17version=jdk-17.0.11+9
 set java21version=jdk-21.0.3+9
 
 :: Delete old work folder
