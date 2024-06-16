@@ -2,7 +2,7 @@
 <div align="left">
 <h1>NMSInstaller</h1>
 
-A tool to install all Minecraft 1.8-1.20 NMS revisions to your local Maven repository.<br>
+A tool to install all Minecraft 1.8-1.21 NMS revisions to your local Maven repository.<br>
 The installer handles all needed JDKs and will download them for you.<br>
 Feel free to PR a bash version.
 
